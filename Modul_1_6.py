@@ -1,0 +1,15 @@
+my_dict = {'Иван': 1989, 'Олеся': 1984, 'Дима': 1975, 'Женя': 2000, 'Люда': 1955}
+print('Словарь:', my_dict)
+print('Год рождения Олееся:', my_dict['Олеся'])
+print('Год рождения Володя:', my_dict.get('Володя', '<<нет такого ключа>>'))
+my_dict.update({'Милана': 1991, 'Юра': 1962})
+removed_year = my_dict.pop('Юра')
+print('Удаленная пара: \'Юра\':', removed_year)
+print('Изменённый словарь:', my_dict)
+print()
+my_set = {1, 2, 2, 3, 5, True, True, False, True, 'list', 'set', 'list', 'list'}
+print('Множество:', my_set)
+my_set.add('bool')
+my_set.add('float')
+my_set.discard(5)
+print('Изменённое множество:', my_set)
